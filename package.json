@@ -1,0 +1,33 @@
+{
+  "name": "express-pagination",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc",
+    "dev": "tsx --env-file=.env --watch  src/index.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.14",
+    "d": "^1.0.2",
+    "prisma": "^6.11.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "zod": "^4.0.5"
+  }
+}
